@@ -1,4 +1,4 @@
-     .top-bar {
+       .top-bar {
        background-color: #ff2200;
        padding: 1rem 0;
      }
@@ -116,8 +116,8 @@
      }
 
      .offer-card:hover {
-       transform: translateY(-5px);
-       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+       transform: translateY(-10px);
+       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
      }
 
      .offer-content h5 {
@@ -144,7 +144,10 @@
        margin-top: 1rem;
        transition: all 0.3s ease;
      }
-
+   .shop-btn:hover{
+      transform: translateY(2px);
+       box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+   }
      .blue-bg {
        background: url('images/grapsimg1.jpg.png');
      }
@@ -162,7 +165,8 @@
      }
 
      .product-card:hover {
-       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        transform: translateY(2px);
      }
 
      .product-card img {
@@ -232,6 +236,7 @@
 
     .category-card:hover {
       transform: translateY(-4px);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
     }
 
     .category-img {
@@ -316,6 +321,7 @@
     .btn-outline-danger:hover {
       background-color: #dc3545;
       color: #fff;
+      
     }
 
        .promo-card {
@@ -331,6 +337,10 @@
       flex-direction: column;
       justify-content: center;
     }
+     .promo-card:hover{
+     transform: translateY(-4px);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+     }
 
     .promo-overlay {
       position: absolute;
@@ -378,7 +388,10 @@
       color: #2a2a2a;
       margin-bottom: 1rem;
     }
-
+  .feature-icon:hover{
+     font-size: 2.8rem;
+       transition: font-size 0.3s ease-in-out;
+  }
     .feature-title {
       font-weight: 600;
       font-size: 1.1rem;
@@ -421,10 +434,13 @@
       text-decoration: line-through;
     }
 
-        .hero-section {
-      text-align: center;
-      padding: 80px 20px;
-    }
+    .hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;      
+  text-align: center;
+}
 
     .hero-section h1 {
       font-size: 2.5rem;
@@ -446,12 +462,23 @@
 
   .shop-btn{
     text-decoration: none !important;
+    text-align: center !important;
+    align-items: center;
   }
 
   
 .card h6 {
   font-size: 16px;
   margin-bottom: 10px;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .btn-read-more {
@@ -464,10 +491,12 @@
   transition: 0.3s ease;
 }
 
-.btn-read-more:hover {
-  background-color: #d32f2f;
-  color: #fff;
+ .btn-read-more:hover {
+  background-color: #039422 !important;
+  color: white !important;
+  transform: scale(1.05);
 }
+
 
 
 
@@ -483,7 +512,7 @@
 }
 
 .logo-img:hover {
-  transform: scale(1.05);
+  transform: scale(1.);
 }
      @media (max-width: 576px) {
        .toplogo {
